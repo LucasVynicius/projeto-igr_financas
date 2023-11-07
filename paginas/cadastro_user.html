@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela login SEDE</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container_img">
+            <img src="../assets/IGR logo-login.png" alt="">
+        </div>
+
+
+        <div class="container__cadastro">
+            <div class="container__form__cad">
+                <div class="container__cad__form">
+                    <form action="" method="post">
+                        <h1>Cadastro de Usuario</h1>
+                    <br/>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" placeholder="Informe seu nome" required>
+                        <br /><br />
+
+                        <label for="data_nascimento">Data de nascimento</label>
+                        <input type="date" placeholder="Informe seu email" required>
+                        <br /><br />
+
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Informe seu email" required>
+                        <br /><br />
+
+                        <label for="email">Função:</label>
+                        <select name="funcao" id="function">
+                            <optgroup label="Função Tesouraria">
+                                <option value="volvo">Secretaria</option>
+                                <option value="saab">Auxiliar</option>
+                              </optgroup>
+                        </select>
+                        <br /><br />
+
+                        <label for="email">Igreja:</label>
+                        <select name="funcao" id="function">
+                            <optgroup label="Função Tesouraria">
+                                <option value="volvo">SEDE BR</option>
+                                <option value="saab">FAMALICÃO PT</option>
+                              </optgroup>
+                        </select>
+                        <br /><br />
+
+                        <label > Senha </label>
+                        <input type="password" placeholder=" Digite sua senha" required>
+                        <br /><br />
+
+                        <label > Senha </label>
+                        <input type="password" placeholder=" Confirme sua senha" required>
+                        <br /><br />
+
+                        <input type="submit" value="ENTRAR" class="btn">
+                        <br/><br/>
+
+                    </form>
+                </div>
+
+                <a href="login_sede.html" class="back_link">Voltar</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
