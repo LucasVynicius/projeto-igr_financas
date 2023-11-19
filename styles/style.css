@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-*{
+:root {
+    --cor-primaria: #000;
+    /* Cor principal (preta) */
+    --cor-secundaria: #f6f6f6;
+    /* Cor secundária (branca) */
+    --cor-terciaria: #22d4fd;
+    /* Cor terciária (azul claro) */
+    --cor-hover: #272727;
+    /* Cor para hover (cinza escuro) */
+
+    --fonte-principal: 'Krona One', sans-serif;
+    /* Fonte principal */
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    /* Fonte secundária */
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,13 +29,14 @@ body{
     min-height: 100vh;
     background: white;
     box-sizing: border-box;
-    
+
 }
 
-/*Pag inicial*/
-.main__login{
+/*-----------------Pag inicial-----------------*/
+.main__login {
     width: 100%;
 }
+
 .logo_main {
     display: flex;
     width: 100%;
@@ -26,12 +44,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .main_initial img {
     width: 92%;
     height: 50%;
 }
 
-.btn_intial{
+.btn_intial {
     display: flex;
     width: 80%;
     height: 270px;
@@ -40,7 +59,7 @@ body{
     gap: 30px;
 }
 
-.btn_intial a input{
+.btn_intial a input {
     width: 180px;
     height: 80px;
     background: #38CCED;
@@ -49,26 +68,28 @@ body{
     font-size: 1.2rem;
 }
 
-/*pag login*/
-.container{
+/*--------------pag login----------------*/
+.container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
 }
-.container_img{
+
+.container_img {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 70%;
     min-height: 100vh;
 
 }
-.container_img img{
+
+.container_img img {
     width: 98%;
-    height: 700px;
+    height: 680px;
 }
 
-.container__login{
+.container__login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,17 +98,17 @@ body{
     background: whitesmoke;
 }
 
-.container__form__login{
+.container__form__login {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 58%;
-    height: 65vh;
+    width: 65%;
+    height: 70%;
     background: #04B3DB;
 }
 
-.container__form__login .back_link{
+.container__form__login .back_link {
     position: absolute;
     bottom: 10px;
     left: 15px;
@@ -98,7 +119,7 @@ body{
     text-decoration: none;
 }
 
-.container__form h1{
+.container__form h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +129,8 @@ body{
     font-size: 4rem;
 }
 
-/*h1 Filial*/
-.container__form .text__pt{
+/*--------------h1 Filial--------------------*/
+.container__form .text__pt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,10 +139,12 @@ body{
     font-weight: bold;
     font-size: 3rem;
 }
-.container__form form{
+
+.container__form form {
     width: 100%;
 }
-.container__form{
+
+.container__form {
     display: flex;
     justify-content: center;
     line-height: 1.5rem;
@@ -130,7 +153,7 @@ body{
     height: 80%;
 }
 
-.container__form label{
+.container__form label {
     display: block;
     justify-content: flex-start;
     font-family: 'open sans';
@@ -138,19 +161,20 @@ body{
     font-size: 1.3rem;
 }
 
-.container__form input{
-    gap:40px;
+.container__form input {
+    gap: 40px;
     width: 100%;
     height: 32px;
     margin-top: 5px;
 }
-.container__form .btn{
+
+.container__form .btn {
     border-radius: 10px;
     width: 65%;
     margin: 4% 0% 0% 20%;
 }
 
-.container__form a{
+.container__form a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,12 +185,107 @@ body{
     font-weight: bold;
 }
 
-.container__form a:hover{
+.container__form a:hover {
     color: white;
 }
 
+/*--------------Pag Cadastro user-------------*/
+
+.container__form__cad .back_link {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.back_link:hover {
+    color: white;
+}
+
+.container__cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.container__form__cad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 58%;
+    background: #04B3DB;
+}
+
+.container__form__cad .back_link {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.container__form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'open sans';
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.container__cad__form form {
+    width: 100%;
+}
+
+.container__cad__form {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    margin: 50px;
+    width: 100%;
+    height: 80%;
+}
+
+.container__cad__form label {
+    display: block;
+    font-family: 'open sans';
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container__cad__form input {
+    gap: 40px;
+    width: 100%;
+    height: 32px;
+    margin-top: 5px;
+}
+
+.container__cad__form .btn {
+    border-radius: 10px;
+    width: 65%;
+    margin: 4% 0% 0% 20%;
+}
+
+/*-------------------DashBoard----------------*/
+
+/* Responsividade */
+
+
+/*-----------------Media Query----------------------*/
 @media(max-width: 1200px){
-    
+   
     .btn_intial{
         align-items: center;
         flex-direction: column;
@@ -179,6 +298,7 @@ body{
         display: none;
         width: 100%;
     }
+    
     .container__login{
        width: 100%;
     }
@@ -187,92 +307,38 @@ body{
         width: 90%;
         height: 50%;
     }
+
+    .container__cadastro{
+        width: 100%;
+    }
+
+    .container__form__cad{
+        width: 100%;
+        
+    }
+
+    .container__cad__form{
+        width: 90%;
+        height: 50%;
+    }
+
+    .nav__bar{
+        width: 12%;
+        height: 100%;
+    }
+
+    .main{
+        width: 88%;
+        height: 100%;
+    }
 }
 
-/*Pag Cadastro user*/
+@media (min-width: 768px) {
 
-.container__form__cad .back_link{
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    font-size: 19px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
 
-.back_link:hover{
-    color: white;
-}
-
-.container__cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    min-height: 100vh;
-    background: whitesmoke;
-}
-
-.container__form__cad{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 58%;
-    /*height: 100vh;*/
-    background: #04B3DB;
-}
-
-.container__form__cad .back_link{
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    font-size: 19px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
-
-.container__form h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    font-family: 'open sans';
-    font-weight: bold;
-    font-size: 4rem;
-}
-
-.container__cad__form form{
-    width: 100%;
-}
-.container__cad__form{
-    display: flex;
-    justify-content: center;
-    line-height: 1.5rem;
-    margin: 50px;
-    width: 100%;
-    height: 80%;
-}
-
-.container__cad__form label{
-    display: block;
-    font-family: 'open sans';
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.container__cad__form input{
-    gap:40px;
-    width: 100%;
-    height: 32px;
-    margin-top: 5px;
-}
-.container__cad__form .btn{
-    border-radius: 10px;
-    width: 65%;
-    margin: 4% 0% 0% 20%;
 }
